@@ -32,7 +32,7 @@ function App() {
   };
   const handlePrice = (event) => {
     console.log(event.target.value);
-    setPrice(event.target.value);
+    setPrice(+event.target.value);
   };
   const handleNameEdit = (event) => {
     console.log(event.target.value);
@@ -48,7 +48,7 @@ function App() {
   };
   const handlePriceEdit = (event) => {
     console.log(event.target.value);
-    setPriceEdit(event.target.value);
+    setPriceEdit(+event.target.value);
   };
   const handleSubmit = () => {
     console.log(name, description, image, price);
